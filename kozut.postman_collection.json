@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "4a00af53-8e3c-497f-8ad5-cdcce76b5051",
+		"name": "kozut",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48359786",
+		"_collection_link": "https://medven066-6267104.postman.co/workspace/Vendel's-Workspace~a3a9b05c-5319-4350-894c-b5286e10e321/collection/48359786-4a00af53-8e3c-497f-8ad5-cdcce76b5051?action=share&source=collection_link&creator=48359786"
+	},
+	"item": [
+		{
+			"name": "regio",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "regio2",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "regio3",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
