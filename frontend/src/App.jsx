@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from './Home'
-import Regiok from './Regiok'
+import Regiok from './Regiok.jsx'
 
 function App() {
 
@@ -9,7 +9,8 @@ function App() {
       <div>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element= {<Home />} />
+        <Route path="/home" element= {<Home/>} />
+        <Route path="/regiok" element= {<Regiok/>} />
       </Routes>
       </BrowserRouter>
       </div>
