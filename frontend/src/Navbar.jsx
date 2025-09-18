@@ -1,12 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React from "react";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-     <div>
+function Nav(){
+
+    return(
+
+        <div>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
@@ -34,7 +32,8 @@ createRoot(document.getElementById('root')).render(
                 </div>
             </div>
             </nav>
-            </div>
-    <App />
-  </StrictMode>,
-)
+        </div>
+        
+    )
+}
+export default Nav

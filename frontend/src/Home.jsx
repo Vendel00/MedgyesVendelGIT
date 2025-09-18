@@ -1,13 +1,14 @@
 import React from "react";
+import App from './Navbar.jsx'
 
 function Home(){
 
     return(
 
-        <div>
-            <h1>Home</h1>
-        </div>
         
+        <div>
+            
+        </div>
     )
 }
 export default Home
