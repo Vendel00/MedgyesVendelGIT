@@ -5,38 +5,83 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+#form {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+#input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.buttomnewstyle {
+  padding: '5px 10px';
+}
+#tablestyle {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+.tableHeaderStyle {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.tableCellStyle {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.noUsersCellStyle {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.saveButtonStyle {
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.cancelButtonStyle {
+  padding: 5px;
+  background-color: #9E9E9E;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.editButtonStyle {
+  padding: 5px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.deleteButtonStyle {
+  padding: 5px;
+  background-color: #F44336;
+  color: white;
+  border: none;
+  cursor: pointer;
 }

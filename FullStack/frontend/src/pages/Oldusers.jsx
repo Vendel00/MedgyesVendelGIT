@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css'; 
+import '../App.css'; 
 
 
 function Oldusers() {
@@ -42,23 +42,6 @@ function Oldusers() {
         fetchData(); 
     }, []);
 
-    // CREATE: Új felhasználó hozzáadása
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        if (!name || !email) {
-            alert("A név és az email megadása kötelező!");
-            return;
-        }
-        try {
-            await axios.post('http://localhost:3001/api/users', { name, email });
-            fetchData(); // Frissítés
-            setName('');
-            setEmail('');
-        } catch (err) {
-            console.error('Hiba az adatok küldésekor:', err);
-            setError("Hiba történt a felhasználó hozzáadása közben.");
-        }
-    };
 
     // DELETE: Felhasználó törlése
     const handleDelete = async (id) => {
@@ -119,33 +102,33 @@ function Oldusers() {
 return (
     <div className="App">
                     <h2>Felhasználók Listája</h2>
-            <table style={{width: '100%', borderCollapse: 'collapse'}}>
+            <table className='tablestyle'>
                 <thead>
                     <tr>
-                        <th style={tableHeaderStyle}>#ID</th>
-                        <th style={tableHeaderStyle}>Név</th>
-                        <th style={tableHeaderStyle}>Email</th>
-                        <th style={tableHeaderStyle}>Regisztráció</th>
-                        <th style={tableHeaderStyle}>Műveletek</th> 
+                        <th id='tableHeaderStyle' >#ID</th>
+                        <th id='tableHeaderStyle' >Név</th>
+                        <th id='tableHeaderStyle'>Email</th>
+                        <th id='tableHeaderStyle'>Regisztráció</th>
+                        <th id='tableHeaderStyle'>Műveletek</th> 
                     </tr>
                 </thead>
                 <tbody>
                     {users.length > 0 ? (
                         users.map(user => (
                             <tr key={user.id}>
-                                <td style={tableCellStyle}>{user.id}</td>
+                                <td id='tableCellStyle'>{user.id}</td>
                                 
                                 {/* Szerkesztési mód váltása */}
                                 {editingId === user.id ? (
                                     <>
-                                        <td style={tableCellStyle}>
+                                        <td id='tableCellStyle'>
                                             <input 
                                                 type="text" 
                                                 value={editedName} 
                                                 onChange={e => setEditedName(e.target.value)} 
                                             />
                                         </td>
-                                        <td style={tableCellStyle}>
+                                        <td id='tableCellStyle'>
                                             <input 
                                                 type="email" 
                                                 value={editedEmail} 
@@ -156,15 +139,15 @@ return (
                                 ) : (
                                     // Normál mód
                                     <>
-                                        <td style={tableCellStyle}>{user.name}</td>
-                                        <td style={tableCellStyle}>{user.email}</td>
+                                        <td id='tableCellStyle'>{user.name}</td>
+                                        <td id='tableCellStyle'>{user.email}</td>
                                     </>
                                 )}
                                 
-                                <td style={tableCellStyle}>{new Date(user.created_at).toLocaleDateString()}</td>
+                                <td id='tableCellStyle'>{new Date(user.created_at).toLocaleDateString()}</td>
 
                                 {/* MŰVELETI GOMBOK */}
-                                <td style={tableCellStyle}>
+                                <td id='tableCellStyle'>
                                     {editingId === user.id ? (
                                         // Szerkesztési mód gombjai
                                         <>
