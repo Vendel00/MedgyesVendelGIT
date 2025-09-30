@@ -151,14 +151,14 @@ return (
                                     {editingId === user.id ? (
                                         // Szerkesztési mód gombjai
                                         <>
-                                            <button onClick={() => handleUpdate(user.id)} style={saveButtonStyle}>Mentés</button>
-                                            <button onClick={handleEditCancel} style={cancelButtonStyle}>Mégse</button>
+                                            <button onClick={() => handleUpdate(user.id)} id='saveButtonStyle'>Mentés</button>
+                                            <button onClick={handleEditCancel} id='cancelButtonStyle'>Mégse</button>
                                         </>
                                     ) : (
                                         // Normál mód gombjai
                                         <>
-                                            <button onClick={() => handleEditStart(user)} style={editButtonStyle}>Szerkesztés</button>
-                                            <button onClick={() => handleDelete(user.id)} style={deleteButtonStyle}>Törlés</button>
+                                            <button onClick={() => handleEditStart(user)} id='editButtonStyle'>Szerkesztés</button>
+                                            <button onClick={() => handleDelete(user.id)} id='deleteButtonStyle'>Törlés</button>
                                         </>
                                     )}
                                 </td>
@@ -166,7 +166,7 @@ return (
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="5" style={noUsersCellStyle}>Nincsenek felhasználók az adatbázisban.</td>
+                            <td colSpan="5" id='noUsersCellStyle'>Nincsenek felhasználók az adatbázisban.</td>
                         </tr>
                     )}
                 </tbody>
@@ -174,14 +174,5 @@ return (
     </div>
     )
 }
-
-const tableHeaderStyle = { border: '1px solid #ccc', padding: '10px', backgroundColor: '#f0f0f0' };
-const tableCellStyle = { border: '1px solid #ccc', padding: '10px', textAlign: 'left' };
-const noUsersCellStyle = { border: '1px solid #ccc', padding: '10px', textAlign: 'center' };
-const saveButtonStyle = { padding: '5px', backgroundColor: '#4CAF50', color: 'white', border: 'none', cursor: 'pointer', marginRight: '5px' };
-const cancelButtonStyle = { padding: '5px', backgroundColor: '#9E9E9E', color: 'white', border: 'none', cursor: 'pointer' };
-const editButtonStyle = { padding: '5px', backgroundColor: '#2196F3', color: 'white', border: 'none', cursor: 'pointer', marginRight: '5px' };
-const deleteButtonStyle = { padding: '5px', backgroundColor: '#F44336', color: 'white', border: 'none', cursor: 'pointer' };
-
 
 export default Oldusers;

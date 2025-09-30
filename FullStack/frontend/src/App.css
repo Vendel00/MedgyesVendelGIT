@@ -13,18 +13,18 @@
   color: #888;
 }
 
-#form {
+.form {
   margin-bottom: 30px;
   border: 1px solid #ccc;
   padding: 15px;
 }
 
-#input {
+.input {
   margin-right: 10px;
   padding: 5px;
 }
 
-.buttomnewstyle {
+#buttomnewstyle {
   padding: '5px 10px';
 }
 #tablestyle {
@@ -34,25 +34,25 @@
 
 
 
-.tableHeaderStyle {
+#tableHeaderStyle {
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #f0f0f0;
 }
 
-.tableCellStyle {
+#tableCellStyle {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 
-.noUsersCellStyle {
+#noUsersCellStyle {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
 }
 
-.saveButtonStyle {
+#saveButtonStyle {
   padding: 5px;
   background-color: #4CAF50;
   color: white;
@@ -61,7 +61,7 @@
   margin-right: 5px;
 }
 
-.cancelButtonStyle {
+#cancelButtonStyle {
   padding: 5px;
   background-color: #9E9E9E;
   color: white;
@@ -69,7 +69,7 @@
   cursor: pointer;
 }
 
-.editButtonStyle {
+#editButtonStyle {
   padding: 5px;
   background-color: #2196F3;
   color: white;
@@ -78,7 +78,7 @@
   margin-right: 5px;
 }
 
-.deleteButtonStyle {
+#deleteButtonStyle {
   padding: 5px;
   background-color: #F44336;
   color: white;
